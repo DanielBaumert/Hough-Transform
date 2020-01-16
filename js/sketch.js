@@ -107,16 +107,6 @@ function draw() {
                 stroke(color(value, 0, 50));
             }
 
-
-            if(h_value === val_max) { 
-                //d = -x(alpha) + y
-                //d - y = -x(alpha)
-                //y = -x(alpha) + d
-                for(var ix = 0; ix < 500; ix++) { 
-                    var iy = -ix * iAlpha - iAccu;
-                    point(ix, -iy);
-                }
-            }
             point(x, y);
         }
     }
